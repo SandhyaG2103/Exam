@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-box {
+    flex: 2;
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: 300px;
+  }
+  
+  .friends-list {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .friend {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .friend:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .message {
+    margin-bottom: 15px;
+  }
+  
+  .message.sender {
+    text-align: right;
+  }
+  
+  .message.sender .message-content {
+    background-color: #dcf8c6;
+  }
+  
+  .message.receiver .message-content {
+    background-color: #e0e0e0;
+  }
+  
+  .message-content {
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 70%;
+  }
+  
+  .input-box {
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
